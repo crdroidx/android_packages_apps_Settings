@@ -24,6 +24,15 @@
         android:order="-150"
         android:key="top_level_custom_category"
         android:layout="@layout/settingslib_preference_category_no_title">
+
+        <com.android.settings.widget.HomepagePreference
+            android:icon="@drawable/ic_settings_google_filled"
+            android:key="top_level_google_custom"
+            android:order="-20"
+            android:title="Google"
+            android:summary="@string/summary_placeholder"
+            settings:controller="com.android.settings.home.GooglePreferenceController"/>
+
         <com.android.settings.widget.HomepagePreference
             android:fragment="com.crdroid.settings.crDroidSettingsLayout"
             android:icon="@drawable/ic_settings_cogs_filled"
@@ -222,6 +231,14 @@
             android:summary="@string/summary_placeholder"
             settings:highlightableMenuKey="@string/menu_key_accounts"
             settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
+
+        <com.android.settings.widget.HomepagePreference
+            android:icon="@drawable/ic_settings_wellbeing_filled"
+            android:key="top_level_wellbeing_custom"
+            android:order="-5"
+            android:title="Digital Wellbeing"
+            android:summary="@string/summary_placeholder"
+            settings:controller="com.android.settings.home.WellbeingPreferenceController"/>
 
         <com.android.settings.widget.HomepagePreference
             android:key="top_level_emergency"
